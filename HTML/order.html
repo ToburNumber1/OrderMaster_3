@@ -3,40 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <title>订餐</title>
-
     <link rel="stylesheet" type="text/css" href="../CSS/index.css">
 </head>
 <body>
-<div ALIGN=CENTER> <div style="border: solid black;background:black;width: 100%;height: 50px">
-    <font face=宋体 color=#FFFFFF size=5>订餐<table align="left" height="55" >
-        <tr>
-            <td  valign="bottom">
-                <input type="submit" value="back" style="background:gray;color=#FFFFFF " />
-            </td>
-        </tr>
-    </table></font></div>
-
-    <p align="left"><b>人：</b></p>
-
-    <input name="" type="text" style="width:90%; height:30px;" >
-    <p></p>
-    <DIV ALIGN=CENTER> <button onclick="window.location='Search.html'"><b>选人</b></button></div>
-
-    <p></p>
-    <p align="left"><b>餐厅:</b></p>
-    <input name="" type="text" style="width:90%; height:30px;" />
-    <p></p>
-    <DIV ALIGN=CENTER> <button onclick="window.location='Search.html'"><b>选餐厅</b></button></div>
-    <p></p>
-
-
-<p align="left"><b>套餐：</b></p>
-    <input name="" type="text" style="width:90%; height:30px;" />
-    <p></p>
-    <DIV ALIGN=CENTER> <button onclick="window.location='search.html'"><b>选套餐</b></button></div>
-    <p></p>
-    <DIV ALIGN=CENTER> <button onclick="window.location='search.html'"><b>确定</b></button></div>
-
+   <div class="order"><button class="back">back</button>订餐</div>
+      <p class="cssstyle">人：</p>
+      <input name="" type="text" disabled>
+      <button class="button_order"  onclick="window.location='order.html'">选人</button>
+      <p class="cssstyle">餐厅：</p>
+      <input name="" type="text" >
+      <button class="button_order" onclick="window.location='order.html'">选餐厅</button>
+      <p class="cssstyle">套餐：</p>
+      <input name="" type="text" >
+      <button class="button_order" onclick="window.location='order.html'">选套餐</button>
+      <button class="button_list" onclick="window.location='OrderForGoods.html'">确认</button>
 </body>
 </html>
 
