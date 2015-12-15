@@ -4,13 +4,32 @@
     <meta charset="UTF-8">
     <title></title>
     <link rel="stylesheet" type="text/css" href="../CSS/index.css">
+    <script language='javascript' src="../JS/index.js">
+
+    </script>
+    <script src="/jquery-2.1.4.min.js"></script>
+
 </head>
 <body>
-<div class="order"><button class="back">back</button>选餐厅</div>
-    <button class="css_button_style" onclick="window.location='Search.html'"><p class="css_font_style">KFC</p></button>
-    <p></p>
-    <button class="css_button_style" onclick="window.location='Search.html'"><p class="css_font_style">7-11</p></button>
-    <p></p>
-    <button class="css_button_style" onclick="window.location='Search.html'"><p class="css_font_style">成都小吃</p></button>
+<div class="order">
+    <button class="back">back</button>
+    选餐厅
+</div>
+<div class="top_distance">
+    <a href="order.html">
+        <button id="aaa" class="css_button_style" onclick=Accept('KFC')><p class="css_font_style">KFC</p>
+        </button>
+    </a>
+    <a href="order.html">
+        <button class="css_button_style" onclick=Accept('7-11')><p class="css_font_style">7-11</p>
+        </button>
+    </a>
+    <a href="order.html">
+        <button class="css_button_style" onclick=Accept('成都小吃')><p class="css_font_style">成都小吃</p>
+        </button>
+    </a>
+</div>
+<script src="/jquery-2.1.4.min.js"></script>
 </body>
 </html>
+
