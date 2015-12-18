@@ -4,39 +4,86 @@
     <meta charset="UTF-8">
     <title>订餐</title>
     <link rel="stylesheet" type="text/css" href="../CSS/index.css">
-    <script src="/jquery-2.1.4.min.js"></script>
+    <script src="../jquery-2.1.4.min.js"></script>
+    <script language='javascript' src="../JS/for.js">
+
+    </script>
 </head>
 <body>
 <div class="order">
-    <a href="index.html">
-        <button class="back">back</button>
-    </a>
-    订餐
+    <li class="apper">
+        <a href="index.html">
+            <div class="back"><p class="titl">back</p></div>
+        </a>
+        订单显示
+    </li>
 </div>
-<div class="top_distance">
-    <div>
-        <div class="font_distance">人：</div>
-        <input class="input_font" id="nameid" name="input_one" type="text" disabled>
-        <a href="Search.html">
-            <button class="button_order">选人</button>
-        </a>
-    </div>
-    <div>
-        <div class="font_distance">餐厅：</div>
-        <input class="input_font" id="restid" name="shop_input" type="text" disabled>
-        <a href="Restaurant.html">
-            <button class="button_order">选餐厅</button>
-        </a>
-    </div>
-    <div>
-        <div class="font_distance">套餐：</div>
-        <input class="input_font" id="foodid" name="input_food" type="text" disabled>
-        <a href="ChooseFoods.html">
-            <button class="button_order">选套餐</button>
-        </a>
-    </div>
-    <div>
-        <button id="door" disabled class="button_ensure" onclick="clean()">确认</button>
+<div>
+    <!--<div class="order">-->
+    <!--<a href="index.html">-->
+    <!--<button class="back">back</button>-->
+    <!--</a>-->
+    <!--订餐-->
+    <!--</div>-->
+    <!--<div class="top_distance">-->
+    <!--<div>-->
+    <!--<div class="font_distance">人：</div>-->
+    <!--<input class="input_font" id="nameid" name="input_one" type="text" disabled>-->
+    <!--<a href="Search.html">-->
+    <!--<button class="button_order">选人</button>-->
+    <!--</a>-->
+    <!--</div>-->
+    <!--<div>-->
+    <!--<div class="font_distance">餐厅：</div>-->
+    <!--<input class="input_font" id="restid" name="shop_input" type="text" disabled>-->
+    <!--<a href="Restaurant.html">-->
+    <!--<button class="button_order">选餐厅</button>-->
+    <!--</a>-->
+    <!--</div>-->
+    <!--<div>-->
+    <!--<div class="font_distance">套餐：</div>-->
+    <!--<input class="input_font" id="foodid" name="input_food" type="text" disabled>-->
+    <!--<a href="ChooseFoods.html">-->
+    <!--<button class="button_order">选套餐</button>-->
+    <!--</a>-->
+    <!--</div>-->
+    <!--<div>-->
+    <!--<button id="door" disabled class="button_ensure" onclick="clean()">确认</button>-->
+    <!--</div>-->
+    <!--</div>-->
+    <div class="top_distance">
+        <div>
+            <div class="font_distance">人：</div>
+            <input class="input_font" id="nameid" name="input_one" type="text" disabled>
+            <ul id="order">
+                <li>
+                    <a href="Search.html" class="button_order">选人
+                    </a>
+                </li>
+            </ul>
+            <div class="font_distance">餐厅：</div>
+            <input class="input_font" id="restid" name="shop_input" type="text" disabled>
+            <ul id="flog">
+                <li>
+                    <a href="Restaurant.html" class="button_order">选餐厅
+                    </a>
+                </li>
+            </ul>
+            <div class="font_distance">套餐：</div>
+            <input class="input_font" id="foodid" name="input_food" type="text" disabled>
+            <ul id="lop">
+                <li>
+                    <a href="ChooseFoods.html" class="button_order">选套餐
+                    </a>
+                </li>
+            </ul>
+            <ul id="lok">
+                <li>
+                    <a id="door" disabled="disabled" class="button_ensure" onclick="clean()">确认
+                    </a>
+                </li>
+            </ul>
+        </div>
     </div>
 </div>
 <script language='javascript' src="../JS/Choosefoods.js">
@@ -50,6 +97,9 @@
 <script language='javascript' src="../JS/index.js">
 
 </script>
-<script src="/jquery-2.1.4.min.js"></script>
+<script language='javascript' src="../JS/for.js">
+
+</script>
+<script src="../jquery-2.1.4.min.js"></script>
 </body>
 </html>

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <title>订餐首页</title>
@@ -10,8 +10,25 @@
     <div class="order">订餐</div>
 </div>
 <div>
-    <button class="button_order" onclick="window.location='order.html'">帮订餐</button>
-    <button class="button_ensure" onclick="window.location='view_order.html'">看订单</button>
+
+    <ul id="menu">
+        <div class="distance">
+            <li>
+                <a class="wmenu" href="order.html">帮订餐
+                </a>
+            </li>
+        </div>
+        <div class="distan">
+            <li>
+                <a class="wmenu" href="view_order.html" onclick="Show_order_info()">看订单
+                </a>
+            </li>
+        </div>
+    </ul>
+
+    <!--<button class="button_order" onclick="window.location='order.html'">帮订餐</button>-->
+    <!--<button class="button_ensure" onclick="window.location='view_order.html'">看订单</button>-->
+
 </div>
 </body>
 </html>

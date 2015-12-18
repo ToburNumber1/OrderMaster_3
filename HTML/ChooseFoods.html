@@ -7,48 +7,88 @@
 </head>
 <script language='javascript' src="../JS/index.js">
 </script>
+<script src="../jquery-2.1.4.min.js"></script>
+<script language='javascript' src="../JS/for.js">
+
+</script>
 <body>
-<div>
-    <div class="order">
-        <button class="back">back</button>
-        选套餐
-    </div>
+<div class="order">
+    <li class="apper" onclick="get_foods_lisst()">
+        <div class="back"><p class="titl">back</p></div>
+        订单显示
+    </li>
 </div>
-<div class="top_distance">
-    <div class="price_distance">
-        <a href="order.html">
-            <button class="choose_button_style" onclick=Receive("田园脆鸡堡")><p class="css_font_style">
-                <b>田园脆鸡堡</b></p></button>
-            <div align="left">￥10.00</div>
-        </a>
-    </div>
-    <div class="price_distance">
-        <a href="order.html">
-            <button class="choose_button_style" onclick=Receive("黄金咖喱猪排饭")><p class="css_font_style">
-                <b>黄金咖喱猪排饭</b></p></button>
-            <div align="left">￥23.50</div>
-        </a>
-    </div>
-    <div class="price_distance">
-        <a href="order.html">
-            <button class="choose_button_style" onclick=Receive("意式肉酱肉丸饭")><p class="css_font_style">
-                <b>意式肉酱肉丸饭</b></p></button>
-            <div align="left">￥16.00</div>
-        </a>
-    </div>
-    <div class="price_distance">
-        <a href="order.html">
-            <button class="choose_button_style" onclick=Receive("老北京鸡肉卷")><p class="css_font_style">
-                <b>老北京鸡肉卷</b></p></button>
-            <div align="left">￥14.00</div>
-        </a>
-    </div>
-    <div class="price_distance">
-        <a href="order.html">
-            <button class="choose_button_style" onclick=Receive("劲脆鸡腿堡")><p class="css_font_style">
-                <b>劲脆鸡腿堡</b></p></button>
-            <div class="price_type" align="left">￥15.00</div>
-        </a>
+<div>
+    <div class="top_distance">
+        <!--<div class="price_distance">-->
+        <!--<a href="order.html">-->
+        <!--<button class="choose_button_style" onclick=Receive("田园脆鸡堡")><p class="css_font_style">-->
+        <!--<b>田园脆鸡堡</b></p></button>-->
+        <!--<div align="left">￥10.00</div>-->
+        <!--</a>-->
+        <!--</div>-->
+        <!--<div class="price_distance">-->
+        <!--<a href="order.html">-->
+        <!--<button class="choose_food_button_style" onclick=Receive("黄金咖喱猪排饭")><p class="css_font_style">-->
+        <!--<b>黄金咖喱猪排饭</b></p></button>-->
+        <!--<div align="left">￥23.50</div>-->
+        <!--</a>-->
+        <!--</div>-->
+        <!--<div class="price_distance">-->
+        <!--<a href="order.html">-->
+        <!--<button class="choose_button_style" onclick=Receive("意式肉酱肉丸饭")><p class="css_font_style">-->
+        <!--<b>意式肉酱肉丸饭</b></p>-->
+        <!--<div class="same_body">￥16.00</div></button>-->
+        <!--</a>-->
+        <!--</div>-->
+        <!--<div class="price_distance">-->
+        <!--<a href="order.html">-->
+        <!--<button class="choose_button_style" onclick=Receive("老北京鸡肉卷")><p class="css_font_style">-->
+        <!--<b>老北京鸡肉卷</b></p></button>-->
+        <!--<div align="left">￥14.00</div>-->
+        <!--</a>-->
+        <!--</div>-->
+        <!--<div class="price_distance">-->
+        <!--<a href="order.html">-->
+        <!--<button class="choose_button_style" onclick=Receive("劲脆鸡腿堡")><p class="css_font_style">-->
+        <!--<b>劲脆鸡腿堡</b></p></button>-->
+        <!--<div class="price_type" align="left">￥15.00</div>-->
+        <!--</a>-->
+        <!--</div>-->
+        <!--<li class="apper">-->
+        <!--<a href="order.html" class="choose-style" onclick=Receive("田园脆鸡堡")><p class="css_font_style">-->
+        <!--<b>田园脆鸡堡</b></p>-->
+
+        <!--<p class="same_body">￥10.00</p>-->
+        <!--</a>-->
+        <!--</li>-->
+        <!--<li class="apper">-->
+        <!--<a href="order.html" class="choose-style" onclick=Receive("黄金咖喱猪排饭")><p class="css_font_style">-->
+        <!--<b>黄金咖喱猪排饭</b></p>-->
+
+        <!--<p class="same-body">￥23.50</p>-->
+        <!--</a>-->
+        <!--</li>-->
+        <!--<li class="apper">-->
+        <!--<a href="order.html" class="choose-style" onclick=Receive("意式肉酱肉丸饭")><p class="css_font_style">-->
+        <!--<b>意式肉酱肉丸饭</b></p>-->
+
+        <!--<p class="other-body">￥16.00</p>-->
+        <!--</a>-->
+        <!--</li>-->
+        <!--<li class="apper">-->
+        <!--<a href="order.html" class="choose-style" onclick=Receive("老北京鸡肉卷")><p class="css_font_style">-->
+        <!--<b>老北京鸡肉卷</b></p>-->
+
+        <!--<p class="other_body">￥14.00</p>-->
+        <!--</a>-->
+        <!--<li class="apper">-->
+        <!--<a href="order.html" class="choose-style" onclick=Receive("劲脆鸡腿堡")><p class="css_font_style">-->
+        <!--<b>劲脆鸡腿堡</b></p>-->
+
+        <!--<p class="another-body">￥15.00</p>-->
+        <!--</a>-->
+        <!--</li>-->
     </div>
 </div>
 </body>

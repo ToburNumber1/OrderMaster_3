@@ -11,15 +11,17 @@
 }
 
 .button_order {
+    padding-top: 13px;
     margin-top: 20px;
-    width: 90%;
+    width: 93%;
     height: 50px;
-    background: gainsboro;
-    margin-left: 5%;
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, color-stop(0, #fcfcfc), color-stop(1, #ececec));
+    margin-left: 2%;
     border-radius: 6px;
     display: block;
-    font-size: 20px;
-
+    font-size: 25px;
+    text-align: center;
+    color: black;
 }
 
 .button_order:hover {
@@ -27,13 +29,16 @@
 }
 
 .button_ensure {
-    width: 90%;
+    padding-top: 13px;
+    width: 93%;
     height: 50px;
-    background: gainsboro;
-    margin-left: 5%;
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, color-stop(0, #fcfcfc), color-stop(1, #ececec));
+    margin-left: 2%;
     border-radius: 6px;
     display: block;
-    font-size: 20px;
+    font-size: 25px;
+    text-align: center;
+    color: black;
 }
 
 .button_ensure:hover {
@@ -46,19 +51,24 @@ body {
     margin: 0;
     background-color: white;
 }
-
+.titl{
+    margin-top: 8px;
+}
 .back {
+
+    margin-top: 3px;
     border-radius: 7px;
     display: list-item;
     background:#4F4F4F;
     left:0;
-    top: 30px;;
+    top: 30px;
     position: absolute;
     width: 60px;
     height: 30px;
     border: none;
     font-size: 15px;
     color: #FFFFFF;
+    font-weight: 100;
 }
 
 input {
@@ -74,28 +84,95 @@ input {
     margin-bottom: 10px
 }
 
-.css_button_style {
-    margin-top: 20px;
+/*.css_button_style {*/
+    /*margin-top: 20px;*/
+    /*width: 100%;*/
+    /*height: 50px;*/
+    /*background-color: beige*/
+/*}*/
+.css_button_style{
+padding-top: 15px;
+background-image: -webkit-gradient(linear, 0 0, 0 100%, color-stop(0, #fcfcfc), color-stop(1, #ececec));
+width: 100%;
+height: 50px;
+
+border-radius: 8px;
+display: block;
+font-size: 25px;
+color:cyan;
+
+float: left;
+
+}
+.choose-style{
+    padding-top: 15px;
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, color-stop(0, #fcfcfc), color-stop(1, #ececec));
     width: 100%;
-    height: 50px;
-    background-color: beige
+    height: 80px;
+    background-color: #ececec;
+    border-radius: 8px;
+    display: block;
+    /*font-size: 25px;*/
+    /*color:cyan;*/
+
+    float: left;
 }
 .choose_button_style{
     width: 100%;
     height: 50px;
     background-color: beige
 }
+.choose_food_button_style{
+    width: 100%;
+    height: 80px;
+    background-color: beige
+}
 .css_font_style{
     color:cyan;
-    font-size: 20px;
+    font-size: 25px;
     float: left;
+    margin-left: 10px;
     margin-top: 10px;
 }
+.same_body{
+    color: black;
+    position: absolute;
+    float:left;
+    margin-left: 10px;
+    top: 145px;
+}
+.same-body{
+    color: black;
+    position: absolute;
+    float:left;
+    margin-left: 10px;
+    top: 240px;
+}
+.other-body{
+    color: black;
+    position: absolute;
+    float:left;
+    margin-left: 10px;
+    top: 335px;
+}.other_body{
+     color: black;
+     position: absolute;
+     float:left;
+     margin-left: 10px;
+     top: 430px;
+ }.another-body{
+       color: black;
+      position: absolute;
+      float:left;
+      margin-left: 10px;
+      top: 525px;
+  }
+
 .css_font_style:hover{
     color: blue;
 }
 .top_distance{
-    margin-top: 40px;
+    margin-top: 30px;
 }
 .price_distance{
     margin-top: 15px;
@@ -111,7 +188,7 @@ a:link {
 }
 .input_font{
     font-size: 20px;
-
+    border: 1px solid #e3e3e3;
 }
 .num{
     background: blue;
@@ -149,4 +226,74 @@ a:link {
     text-align: center;
     font-size: 20px;
     padding-top: 16px;
+}
+/*。easy{*/
+    /*width: 90%;*/
+    /*height: 50px;*/
+/*}*/
+
+
+ul#menu li {
+
+    display: inline;
+}
+ul#order li {
+
+    display: inline;
+}ul#flog li {
+
+     display: inline;
+ }
+ul#lop li {
+
+    display: inline;
+}
+ul#lok li {
+
+    display: inline;
+}
+li#lpo {
+
+    display: inline;
+}
+li#lpo-li {
+
+    display: inline;
+}
+li#li-lpo {
+
+    display: inline;
+}
+.apper{
+    display: inline;
+}
+/*ul#menu li a {*/
+    /*background-image: -webkit-gradient(linear,0 0, 0 100%,  color-stop(0, #fcfcfc), color-stop(1, #ececec));*/
+    /*color: black;*/
+    /*padding: 10px 20px;*/
+    /*text-decoration: none;*/
+    /*border-radius: 4px 4px 0 0;*/
+    /*width: 90%;*/
+    /*height: 50px;*/
+/*}*/
+
+ul#menu li a:hover {
+    background-color: #b3b3b3;
+}
+.wmenu{
+    height: 50px;
+    width: 90%;
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, color-stop(0, #fcfcfc), color-stop(1, #ececec));
+    padding: 15px 550px;
+    margin-left: 2%;
+    color: black;
+    font-size: 22px;
+    text-align: center;
+    border-radius: 6px;
+}
+.distance{
+    margin-top: 40px;
+}
+.distan{
+    margin-top: 27px;
 }
