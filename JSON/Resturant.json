@@ -1,0 +1,16 @@
+{
+  "resturant": [
+    {
+      "name": "KFC",
+      "css": "lpo"
+    },
+    {
+      "name": "7-11",
+      "css": "lpo-li"
+    },
+    {
+      "name": "成都小吃",
+      "css": "li-lpo"
+    }
+  ]
+}
