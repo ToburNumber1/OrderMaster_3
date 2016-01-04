@@ -3,22 +3,23 @@
 // */
 //
 window.onload = function () {
-    show_foods()
+    show_foods_list()
     judge()
 }
-function show_foods() {
+function show_foods_list() {
 
-    $.getJSON("../JSON/GoodsList.json", function (sdf) {
+    $.getJSON("../JSON/GoodsList.json", function (item) {
 
-        sdf["food_lists"][localStorage.getItem('shop')].forEach(function (foo) {
-            var foods_with_price_html = "<li class='apper'><a href='Order.html' class='choose-style' onclick='receive(" + '"' + foo.fo + '"' + ","+'"'+foo.price+'"'+")'>" + "<p class='css_font_style'><b>" + foo.fo + "</b></p><p class='same_body'>" +"￥"+foo.price + "</p></a></li>";
+        item["food_lists"][localStorage.getItem('shop')].forEach(function (foo) {
+            var foods_with_price_html = "<li class='apper'><div class='choose-style' onclick='save_name_with_price(" + '"' + foo.food + '"' + ","+'"'+foo.price+'"'+")'>" + "<p class='css_font_style'><b>" + foo.food + "</b></p><p class='same_body'>" +"￥"+foo.price + "</p></div></li>";
             $("body").append(foods_with_price_html)
         })
     })
 }
-function receive(name, price) {
+function save_name_with_price(name, price) {
+    window.location='Order.html';
     localStorage.setItem("food", name);
-    localStorage.setItem("sdfa", price)
+    localStorage.setItem("money", price)
 
 }
 

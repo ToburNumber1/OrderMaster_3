@@ -4,44 +4,49 @@
 
 
 function clean() {
-    if(document.getElementById("rest").value != ""&&document.getElementById("name").value != ""&&document.getElementById("food").value != ""){
+    if (document.getElementById("rest").value != "" && document.getElementById("name").value != "" && document.getElementById("food").value != "") {
 
-        var person = localStorage.getItem("man");
-        var shop = localStorage.getItem("shop");
-        var price = localStorage.getItem("sdfa");
-        var food = localStorage.getItem("food");
-        var array_info = JSON.parse(localStorage.getItem("info")) || [];
-        var obj_info = {name: person, shop: shop, foo: food, mon: price};
-        array_info.push(obj_info);
-        localStorage.setItem("info", JSON.stringify(array_info));
-
-
-        document.getElementById("name").value = "";
-        document.getElementById("rest").value = "";
-        document.getElementById("food").value = "";
-        localStorage.removeItem("man");
-        localStorage.removeItem("shop");
-        localStorage.removeItem("food");
-        localStorage.removeItem("sdfa")
+        get_item();
+        remove_item();
     }
-    else{
-        $("#test").attr("disabled","false")
+    else {
+        $("#test").attr("disabled", "false")
     }
 
 }
-function cleanall() {
-    localStorage.clear()
+function get_item() {
+    var person = localStorage.getItem("man");
+    var shop = localStorage.getItem("shop");
+    var price = localStorage.getItem("money");
+    var food = localStorage.getItem("food");
+    var array_info = JSON.parse(localStorage.getItem("info")) || [];
+    var obj_info = {name: person, shop: shop, food: food, money: price};
+    array_info.push(obj_info);
+    localStorage.setItem("info", JSON.stringify(array_info));
+
 }
-function judge(){
-    if(document.getElementById("rest").value == "" ){
-        $("bin_stop").attr("disabled","false")
+function remove_item() {
+    document.getElementById("name").value = "";
+    document.getElementById("rest").value = "";
+    document.getElementById("food").value = "";
+    localStorage.removeItem("man");
+    localStorage.removeItem("shop");
+    localStorage.removeItem("food");
+    localStorage.removeItem("money")
+}
+//function cleanall() {
+//    localStorage.clear()
+//}
+function judge() {
+    if (document.getElementById("rest").value == "") {
+        $("bin_stop").attr("disabled", "false")
     }
-    else{
-        window.location='ChooseFoods.html'
+    else {
+        window.location = 'ChooseFoods.html'
     }
 }
-function clear_food_input(){
-    window.location='Restaurant.html';
+function clear_food_input() {
+    window.location = 'Restaurant.html';
     document.getElementById("food").value = "";
     localStorage.removeItem("food");
 }
