@@ -5,14 +5,8 @@
     <title>订餐</title>
     <link rel="stylesheet" type="text/css" href="../CSS/Index.css">
     <script src="../jquery-2.1.4.min.js"></script>
-    <script language='javascript' src="../JS/Index.js">
-    </script>
-    <script language='javascript' src="../JS/Customer.js">
-    </script>
-    <script language='javascript' src="../JS/FoodsList.js">
-    </script>
-    <script language='javascript' src="../JS/Resturant.js">
-    </script>
+
+    <script src="../JS/Order.js"></script>
 </head>
 <body>
 <div class="order">
@@ -30,7 +24,7 @@
             <input class="input_font" id="name" name="input_one" type="text" disabled>
 
             <a href="Search.html">
-                <div id="bin_go"type="button" class="button_order">选人
+                <div id="bin_go" type="button" class="button_order">选人
 
                 </div>
             </a>
@@ -48,20 +42,18 @@
             <input class="input_font" id="food" name="input_food" type="text" disabled>
 
 
-            <div id="bin_stop" class="button_order"type="button" onclick="judge()" disabled>选套餐
+            <button id="bin_stop" class="button_orders" onclick="food_list()" >选套餐
 
-            </div>
+            </button>
 
 
-            <div id="test" class="button_ensure"type="button" onclick="clean()" disabled>确认
+            <button id="test" class="button_ensure" onclick="ensure()" >确认
 
-            </div>
+            </button>
         </div>
     </div>
 </div>
 
-<script language='javascript' src="../JS/Index.js">
-</script>
-<script src="../JS/Order.js"></script>
+
 </body>
 </html>

@@ -6,9 +6,6 @@ window.onload = function () {
 };
 
 
-
-
-
 function show_restaurant_list() {
 
     $.getJSON("../JSON/GoodsList.json", function (item) {
@@ -20,8 +17,9 @@ function show_restaurant_list() {
     })
 }
 
-
 function save_restaurants(name) {
-    window.location='Order.html';
+
     localStorage.setItem("shop", name);
+    localStorage.removeItem("food");
+    window.location='Order.html';
 }
